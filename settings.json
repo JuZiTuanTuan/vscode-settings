@@ -1,0 +1,96 @@
+{
+  // *编辑器配置
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 500,
+  "editor.tabSize": 2,
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "emmet.excludeLanguages": ["markdown"],
+  "git.autofetch": true,
+  "git.suggestSmartCommit": false,
+
+  // *插件配置
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "path-intellisense.extensionOnImport": true,
+  "tabnine.experimentalAutoImports": true,
+  "bracketPairColorizer.consecutivePairColors": ["()", "[]", "{}", ["pink", "LightSkyBlue", "Orchid", "GOLD"], "Red"],
+  "bracketPairColorizer.depreciation-notice": false,
+
+  // *eslint
+  // eslint配置项,保存时自动修复错误
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.debug": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn",
+
+  // *prettier
+  // 不使用编辑器配置,非常关键
+  "prettier.useEditorConfig": false,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.semi": false,
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "none",
+
+  // *vetur
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.js": "prettier",
+  // vetur的prettier需要单独设置
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "singleQuote": true,
+      "semi": false
+    }
+  },
+  // 忽略vetur提示,主要是tsconfig那个
+  "vetur.ignoreProjectWarning": true,
+
+  // *volar
+  // "volar.completion.preferredAttrNameCase": "auto-camel",
+
+  // * 格式化配置
+  // 定义不同文件的格式化工具为prettier
+  "[vue]": {
+    // "editor.defaultFormatter": "johnsoncodehk.volar"
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+
+  // *小程序
+  // "files.associations": {
+  //   "*.cjson": "jsonc",
+  //   "*.wxss": "css",
+  //   "*.wxs": "javascript",
+  //   "*.json": "jsonc"
+  // },
+  // "emmet.includeLanguages": {
+  //   "wxml": "html",
+  //   "axml": "xml"
+  // },
+  // "minapp-vscode.disableAutoConfig": true,
+}
