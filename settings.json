@@ -5,6 +5,8 @@
   "editor.tabSize": 2,
   "editor.suggestSelection": "first",
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "material-icon-theme",
@@ -20,8 +22,10 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "path-intellisense.extensionOnImport": true,
   "tabnine.experimentalAutoImports": true,
-  "bracketPairColorizer.consecutivePairColors": ["()", "[]", "{}", ["pink", "LightSkyBlue", "Orchid", "GOLD"], "Red"],
-  "bracketPairColorizer.depreciation-notice": false,
+  "code-runner.runInTerminal": true,
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "/Users/gaozijian/Desktop/leetcode",
+  "leetcode.defaultLanguage": "javascript",
 
   // *eslint
   // eslint配置项,保存时自动修复错误
@@ -46,26 +50,6 @@
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "none",
 
-  // *vetur
-  "vetur.format.defaultFormatter.html": "prettyhtml",
-  "vetur.format.defaultFormatter.js": "prettier",
-  // vetur的prettier需要单独设置
-  "vetur.format.defaultFormatterOptions": {
-    "prettier": {
-      "singleQuote": true,
-      "printWidth": 120,
-      "semi": false,
-      "useTabs": false,
-      "tabWidth": 2,
-      "trailingComma": "none"
-    }
-  },
-  // 忽略vetur提示,主要是tsconfig那个
-  "vetur.ignoreProjectWarning": true,
-
-  // *volar
-  // "volar.completion.preferredAttrNameCase": "auto-camel",
-
   // * 格式化配置
   // 定义不同文件的格式化工具为prettier
   "[vue]": {
@@ -83,7 +67,27 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+
+  // *vetur
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.js": "prettier",
+  // vetur的prettier需要单独设置
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "singleQuote": true,
+      "printWidth": 120,
+      "semi": false,
+      "useTabs": false,
+      "tabWidth": 2,
+      "trailingComma": "none"
+    }
+  },
+  // 忽略vetur提示,主要是tsconfig那个
+  "vetur.ignoreProjectWarning": true
+
+  // *volar
+  // "volar.completion.preferredAttrNameCase": "auto-camel",
 
   // *小程序
   // "files.associations": {
