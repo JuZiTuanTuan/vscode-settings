@@ -16,6 +16,7 @@
   "emmet.excludeLanguages": ["markdown"],
   "git.autofetch": true,
   "git.suggestSmartCommit": false,
+  "window.zoomLevel": 1,
 
   // *插件配置
   "liveServer.settings.CustomBrowser": "chrome",
@@ -23,14 +24,11 @@
   "path-intellisense.extensionOnImport": true,
   "tabnine.experimentalAutoImports": true,
   "code-runner.runInTerminal": true,
-  "leetcode.endpoint": "leetcode-cn",
-  "leetcode.workspaceFolder": "/Users/gaozijian/Desktop/leetcode",
-  "leetcode.defaultLanguage": "javascript",
 
   // *eslint
   // eslint配置项,保存时自动修复错误
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll.eslint": true
   },
   "eslint.codeAction.showDocumentation": {
     "enable": true
@@ -39,6 +37,9 @@
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
   "eslint.packageManager": "yarn",
+  // xc配置
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
 
   // *prettier
   // 不使用编辑器配置,非常关键
@@ -49,11 +50,12 @@
   "prettier.useTabs": false,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "none",
+  "prettier.jsxSingleQuote": true,
 
   // * 格式化配置
   // 定义不同文件的格式化工具为prettier
   "[vue]": {
-    // "editor.defaultFormatter": "johnsoncodehk.volar"
+    // "editor.defaultFormatter": "Vue.volar"
     "editor.defaultFormatter": "octref.vetur"
   },
   "[jsonc]": {
@@ -85,20 +87,4 @@
   },
   // 忽略vetur提示,主要是tsconfig那个
   "vetur.ignoreProjectWarning": true
-
-  // *volar
-  // "volar.completion.preferredAttrNameCase": "auto-camel",
-
-  // *小程序
-  // "files.associations": {
-  //   "*.cjson": "jsonc",
-  //   "*.wxss": "css",
-  //   "*.wxs": "javascript",
-  //   "*.json": "jsonc"
-  // },
-  // "emmet.includeLanguages": {
-  //   "wxml": "html",
-  //   "axml": "xml"
-  // },
-  // "minapp-vscode.disableAutoConfig": true,
 }
