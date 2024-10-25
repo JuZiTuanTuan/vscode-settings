@@ -1,92 +1,76 @@
 {
-  // *编辑器配置
-  "files.autoSave": "onFocusChange",
-  "files.autoSaveDelay": 500,
-  "editor.tabSize": 2,
-  "editor.suggestSelection": "first",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.colorTheme": "Atom One Dark",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
-  "security.workspace.trust.untrustedFiles": "open",
-  "explorer.confirmDelete": false,
-  "emmet.excludeLanguages": ["markdown"],
-  "git.autofetch": true,
-  "git.suggestSmartCommit": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.fontFamily": "Cascadia Mono PL",
+    // *编辑器配置
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 500,
+    "editor.suggestSelection": "first",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 4,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDelete": false,
+    "emmet.excludeLanguages": ["markdown"],
+    "git.autofetch": true,
+    "git.suggestSmartCommit": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontFamily": "Cascadia Mono PL",
+    "files.autoGuessEncoding": true,
 
-  // *插件配置
-  "liveServer.settings.CustomBrowser": "chrome",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "path-intellisense.extensionOnImport": true,
-  "tabnine.experimentalAutoImports": true,
-  "code-runner.runInTerminal": true,
+    // *插件配置
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "path-intellisense.extensionOnImport": true,
+    "code-runner.runInTerminal": true,
+    "todo-tree.general.showActivityBarBadge": true,
+    "todo-tree.filtering.excludeGlobs": ["**/node_modules/*/**", "**/uni_modules/*/**"],
+    "todo-tree.highlights.useColourScheme": true,
+    "todo-tree.regex.regexCaseSensitive": false,
+    "todo-tree.highlights.backgroundColourScheme": ["orange", "red", "yellow", "green", "blue", "indigo", "violet"],
 
-  // *eslint
-  // eslint配置项,保存时自动修复错误
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
-  "eslint.debug": true,
-  "eslint.format.enable": true,
-  "eslint.lintTask.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+    // *eslint
+    // eslint配置项,保存时自动修复错误
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "eslint.debug": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
 
-  // *prettier
-  // 不使用编辑器配置,非常关键
-  "prettier.useEditorConfig": false,
-  "prettier.singleQuote": true,
-  "prettier.semi": false,
-  "prettier.useTabs": false,
-  "prettier.tabWidth": 2,
-  "prettier.trailingComma": "none",
-  "prettier.jsxSingleQuote": true,
-  "prettier.htmlWhitespaceSensitivity": "ignore",
+    // *prettier
+    // 不使用编辑器配置,非常关键
+    "prettier.useEditorConfig": false,
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "prettier.useTabs": false,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "none",
+    "prettier.jsxSingleQuote": true,
+    "prettier.printWidth": 120,
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "prettier.documentSelectors": ["**/*.wxml", "**/*.wxss"],
 
-  // * 格式化配置
-  // 定义不同文件的格式化工具为prettier
-  "[vue]": {
-    // "editor.defaultFormatter": "Vue.volar"
-    "editor.defaultFormatter": "octref.vetur"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "vetur.format.defaultFormatter.js": "prettier",
-  // vetur的prettier需要单独设置
-  "vetur.format.defaultFormatterOptions": {
-    "prettier": {
-      "singleQuote": true,
-      "printWidth": 120,
-      "semi": false,
-      "useTabs": false,
-      "tabWidth": 2,
-      "trailingComma": "none",
-      // 避免标签末尾的 > 到下一行
-      "htmlWhitespaceSensitivity": "ignore"
+    // * 格式化配置
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
-  },
-  // 忽略vetur提示,主要是tsconfig那个
-  "vetur.ignoreProjectWarning": true
 }
